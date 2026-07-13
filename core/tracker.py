@@ -10,8 +10,9 @@ import json
 import threading
 from datetime import datetime
 
-BASE = os.path.dirname(__file__)
-STORES_DIR = os.path.join(os.path.dirname(BASE), "stores")
+BASE = os.path.dirname(os.path.abspath(__file__))
+# stores/ 與 core/ 同級；用 __file__ 往上一層再進 stores，跨平台/Render 都穩
+STORES_DIR = os.path.normpath(os.path.join(BASE, "..", "stores"))
 LOCK = threading.Lock()
 
 
