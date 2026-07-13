@@ -1,0 +1,11 @@
+{
+  "name": "面泌體 ExoMuse",
+  "owner": "合作方",
+  "description": "外泌體保養品牌",
+  "currency": "NT$",
+  "payments": ["qrcode", "manual"],
+  "split": 0.0,
+  "store_id": "exosome",
+  "api_key": "dc_exo_8f3a2b1c9d4e",
+  "created_at": "2026-06-26"
+}

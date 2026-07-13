@@ -1,0 +1,11 @@
+{
+  "name": "TwoTone 龍族商城",
+  "owner": "龍族直營",
+  "description": "LINE Bot 電商測試店",
+  "currency": "NT$",
+  "payments": ["qrcode", "manual"],
+  "split": 0.0,
+  "store_id": "twotone",
+  "api_key": "dc_tt_5e7f9a2b3c8d",
+  "created_at": "2026-07-09"
+}
