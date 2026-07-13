@@ -8,7 +8,7 @@ from __future__ import annotations
 import os
 import json
 import threading
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 # stores/ 與 core/ 同級；用 __file__ 往上一層再進 stores，跨平台/Render 都穩
@@ -17,7 +17,8 @@ LOCK = threading.Lock()
 
 
 def _now() -> str:
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    tz = timezone(timedelta(hours=8))
+    return datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 
 
 # ── 店鋪管理 ──────────────────────────────────────────

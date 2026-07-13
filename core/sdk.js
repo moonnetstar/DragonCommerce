@@ -12,7 +12,7 @@
  *   </script>
  */
 (function (global) {
-  const DEFAULT_HOST = "https://italiano-www-parish-pcs.trycloudflare.com"; // 固定網址（Cloudflare Tunnel，重啟會變更）
+  const DEFAULT_HOST = "https://dragoncommerce.onrender.com"; // 固定雲端網址（Render，永久不變）
   let config = { storeId: "", apiKey: "", host: DEFAULT_HOST };
 
   const DragonCommerce = {
